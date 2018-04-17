@@ -29,7 +29,6 @@ header div{
   height: 30px;
   top: 20px;
   right: 16px;
-  background-color: pink;
 }
 header span{
   width: 28px;
@@ -37,7 +36,7 @@ header span{
   margin: 2px 0;
   background-color: #385c70;
   position: absolute;
-  top: 15px;
+  top: 11px;
   left: 1px;
   transition: .5s ease;
   border-radius: 2px;
