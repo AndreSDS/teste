@@ -29,7 +29,6 @@ header div{
   height: 30px;
   top: 20px;
   right: 16px;
-  background-color: pink;
 }
 header span{
   width: 28px;
@@ -37,7 +36,7 @@ header span{
   margin: 2px 0;
   background-color: #385c70;
   position: absolute;
-  top: 15px;
+  top: 11px;
   left: 1px;
   transition: .5s ease;
   border-radius: 2px;
@@ -71,34 +70,44 @@ header span.ativo:after{
 }
 /*animação slide do nav*/
 nav{
-  position: relative;
-  top: -100vw;
-  visibility: hidden;
-  transition: top 1s ease-in-out;
-  text-align: center;
   font-family: 'Julius Sans One', sans-serif;
   text-transform: uppercase;
-  color: #385a72;
-  font-size: 2rem;
-  font-weight: bold;
-  height: 100vh;
+  color: #385c72;
+  text-align: center;
+  font-size: 3rem;
+  position: absolute;
+  height: 0;
   width: 100vw;
+  opacity: 0;
+  transition: height 1s ease-in-out, opacity 1s ease-in-out;
   background-color: lightblue;
 }
 nav ul li{
   padding: 1rem;
 }
+nav ul li:hover{
+  background-color:  #c4f1e5;
+  font-size: 3.1rem;
+  transition: background-color .5s ease-in-out, font-size .3s ease-in-out;
+}
+nav a{
+  color: inherit;
+  text-decoration: none;
+}
+nav footer{
+  font-size: 1rem;
+}
 section.banner{
   background: #0f42ab;
-  height: 50vh;
+  height: 100vh;
 }
 aside{
   background: darkgreen;
-  height: 50vh;
+  height: 100vh;
 }
 main{
   background: orange;
-  height: 50vh;
+  height: 100vh;
 }
 footer{
   background: firebrick;

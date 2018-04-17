@@ -12,11 +12,12 @@ window.onload = function initiPage() {//aguardando página ser carregada
   div.addEventListener('click', function () {
     if (span.className != 'ativo') {
       span.className = 'ativo';
-      nav.style.top = 70+'px';
-      nav.style.visibility = 'visible';
+      nav.style.height = 100+'vh';
+      nav.style.opacity = 1;
     }else{
       span.className = '';
-      nav.style.top =  -175+'vw';
+      nav.style.height = 0;
+      nav.style.opacity = 0;
     }
   });
 
