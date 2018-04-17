@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+ @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+
+body{
+  background: lightblue;
+}
+header{
+  height: 70px;
+  background-color: transparent;
+}
+header:hover{
+  transition: background-color 0.5s linear;
+  background-color: #c4f1e5;
+}
+header h1{//escolher uma fonte legal e colocar um hover
+  display: inline;
+  font-family: 'Oswald',sans-serif;
+  line-height: 50px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #385c70;
+  padding: .5rem 1rem;
+}
+/*início - estilo do ícone menu dropdown*/
+header div{
+  cursor: pointer;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  right: 16px;
+  background-color: pink;
+}
+header span{
+  width: 28px;
+  height: 4px;
+  margin: 2px 0;
+  background-color: #385c70;
+  position: absolute;
+  top: 15px;
+  left: 1px;
+  transition: .5s ease;
+  border-radius: 2px;
+}
+header span:before, header span:after{
+  content: '';
+  width: 28px;
+  height: 4px;
+  background-color: #385c70;
+  position: absolute;
+  transition: .5s;
+  border-radius: 2px;
+}
+header span:before{
+  top: -8px;
+}
+header span:after{
+  top: 8px;
+}
+/*animação com js - ícone menu dropdown*/
+header span.ativo{
+  background-color: transparent;
+}
+header span.ativo:before{
+  top: 0;
+  transform: rotate(45deg);
+}
+header span.ativo:after{
+  top: 0;
+  transform: rotate(-45deg);
+}
+/*animação slide do nav*/
+nav{
+  position: relative;
+  top: -100vw;
+  visibility: hidden;
+  transition: top 1s ease-in-out;
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  text-transform: uppercase;
+  color: #385a72;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 100vh;
+  width: 100vw;
+  background-color: lightblue;
+}
+nav ul li{
+  padding: 1rem;
+}
+section.banner{
+  background: #0f42ab;
+  height: 50vh;
+}
+aside{
+  background: darkgreen;
+  height: 50vh;
+}
+main{
+  background: orange;
+  height: 50vh;
+}
+footer{
+  background: firebrick;
+  height: 50vh;
+}
