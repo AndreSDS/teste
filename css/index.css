@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
- @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
 
 body{
   background: lightblue;
@@ -87,15 +87,18 @@ nav ul li{
 }
 nav ul li:hover{
   background-color:  #c4f1e5;
-  font-size: 3.1rem;
   transition: background-color .5s ease-in-out, font-size .3s ease-in-out;
 }
-nav a{
-  color: inherit;
+nav ul li a{
   text-decoration: none;
+  color: #385c72;
 }
-nav footer{
-  font-size: 1rem;
+a.social{
+  color: #385c72;
+  font-size: 2.5rem;
+  position: relative;
+  top: 90px;
+  padding: 0 1rem;
 }
 section.banner{
   background: #0f42ab;
