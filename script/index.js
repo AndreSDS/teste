@@ -6,7 +6,7 @@ window.onload = function initiPage() {//aguardando página ser carregada
       if (span.className != 'ativo') {
         span.className = 'ativo';
         //linha pra exibir o menu dropdown
-        document.getElementById('menu').style.height = 100+'vh';
+        document.getElementById('menu').style.height = 60+'vh';
       }else {
         span.className = '';
         document.getElementById('menu').style.height = 0;
