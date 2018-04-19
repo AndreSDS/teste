@@ -15,7 +15,7 @@
   width: 35px;
   height: 5px;
   border-radius: 2.5px;
-  background-color:  #f9fafce6;
+  background-color:  #f9fafc;
   position: absolute;
   top: 10px;
   transition: .3s  linear 0s;
@@ -26,7 +26,7 @@
   width: 35px;
   height: 5px;
   border-radius: 2.5px;
-  background-color: #f9fafce6;
+  background-color: #f9fafc;
   transition: .3s;
 }
 #dropdown-icon span:before{
@@ -62,7 +62,7 @@ header{
   top: 0;
   background: transparent;
   font-family: 'Oswald', serif;
-  color: #f9fafce6;
+  color: #f9fafc;
   text-transform: uppercase;
   transition: .3s all ease-in-out;
 }
@@ -73,7 +73,7 @@ header h1 {
   transition: .3s all ease-in-out;
 }
 header h1:hover{
-  color: #294c9ecc;
+  color: #294c9e;
 }
 nav {
   display: block;
@@ -96,7 +96,7 @@ nav ul li{
   transition: .2s all ease-in;
 }
 nav ul li:hover{
-  background-color: #144e8fe6;
+  background-color: #144e8f;
 }
 nav ul li a{/*inderir depois uma linha no after no a que cresce quando hover nele*/
 	text-decoration: none;
