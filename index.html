@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,39 +12,57 @@
   <script src="script/index.js"></script>
 </head>
 <body>
-  <content>
-    <header id="home">
+  <div class="container">
+    <header>
         <h1>André</h1>
-          <div>
-            <span></span><!--ícone menu dropdown-->
-          </div>
+        <div id="dropdown-icon">
+          <span></span><!--ícone menu dropdown-->
+        </div>
+        <nav id="menu">
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#work">work</a></li>
+            <li><a href="#about">about</a></li>
+            <li class="social"><a href="https://github.com/AndreSDS" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+            <li class="social"><a href="https://linkedin.com/in/andrésds" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li class="social"><a href="https://www.facebook.com/andre.souzadasilva.7" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          </ul>
+        </nav>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#home">home</a></li>
-        <li><a href="#work">work</a></li>
-        <li><a href="#about">about</a></li>
-      </ul>
-      <a class="social" href="https://github.com/AndreSDS" target="_blank"><i class="fa fa-github-alt"></i></>
-      <a class="social" href="https://linkedin.com/in/andrésds" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a class="social" href="https://www.facebook.com/andre.souzadasilva.7" target="_blank"><i class="fa fa-facebook"></i></a>
-    </nav>
 
     <section class="banner">
-
+      <h1>Olá eu sou o goku andré</h1><!--inserir scripst que muda o nome procurar uma imagem do goku e svg pra por como background-->
     </section>
 
-    <aside>
+    <div class="sobre">
+        <div class="foto"></div>
+        <div class="resumo">
+          <h2>André Souza da Silva</h2>
+          <p>Eu tenho 32 anos de idade, uma esposa maravilhosa e dois filhos.</p>
+          <p>Alagoano por nascimento, paulistano por escolha do destino.</p>
+          <p>Formado no ensino médio em escola pública. E técnico em mecânica pelo SENAI.</p>
+          <p>Me <i>apaixonei</i> pelo frontend e desde então venho tentando impulsionar esse relacionamento.</p>
+        </div>
+    </div>
 
-    </aside>
+      <section class="skills">
+          <h1>Algumas habilidades que adquiri durante o caminho</h1>
+          <h3>E estou venho me esforçando pra melhorá-las</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Github</li>
+          </ul>
+      </section>
 
-    <main id="work">
-
-    </main>
-
-    <footer id="about">
-
+    <footer id="mais">
+      <ul>
+        <li><a class="social" href="https://github.com/AndreSDS" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+        <li><a class="social" href="https://linkedin.com/in/andrésds" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="social" href="https://www.facebook.com/andre.souzadasilva.7" target="_blank"><i class="fa fa-facebook"></i></a>
+      </ul>
     </footer>
-  </content>
+  </div>
 </body>
 </html>
