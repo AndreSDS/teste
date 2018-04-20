@@ -11,7 +11,7 @@
   right: 1rem;
   cursor: pointer;
 }
-#dropdown-icon span{
+.humburger-icon{
   width: 35px;
   height: 5px;
   border-radius: 2.5px;
@@ -20,7 +20,7 @@
   top: 10px;
   transition: .3s  linear 0s;
 }
-#dropdown-icon span:before, #dropdown-icon span:after{
+.humburger-icon:before, .humburger-icon:after{
   content: '';
   position: absolute;
   width: 35px;
@@ -29,30 +29,36 @@
   background-color: #153964;
   transition: .3s;
 }
-#dropdown-icon span:before{
+.humburger-icon:before{
   top: 10px;
 }
-#dropdown-icon span:after{
+.humburger-icon:after{
   top: -10px;
 }
-#dropdown-icon span.ativo{
-  background-color: transparent;
-}
-#dropdown-icon span.ativo:before{
+.humburger-icon.ativo:before{
   top: 0;
   transform: rotate(45deg);
 }
-#dropdown-icon span.ativo:after{
+.humburger-icon.ativo:after{
   top: 0;
   transform: rotate(135deg);
 }
 /*final dropdown-icon*/
 
 /*Classes que serão setadas pelo javascript dinamicamente*/
-/* Essa classe pelo javascript dinamicamente ao rolar a página*/
 .sumiu{
   height: 0;
   overflow: hidden;
+  opacity: 0;
+}
+.ativo{
+  background-color: transparent;
+}
+.dropdown{
+  height: 100vh;
+}
+.opcoesMenu{
+
 }
 /*Final das classes que serão setadas pelo javascript dinamicamente*/
 
@@ -74,7 +80,7 @@ header{
   width: 100%;
   position: fixed;
   top: 0;
-  background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+  background: #c2a3ce;
   font-family: 'Oswald', serif;
   color: #153964;
   box-shadow: 0.5px 0.5px 8px #828080;
@@ -100,11 +106,11 @@ nav {
   text-align: center;
   transition: height .3s linear 0s;
   font-family: 'Julius Sans One', sans-serif;
+  background: inherit;
 }
 nav ul{
-	height: 60vh;
+	height: 75vh;
 	width: 100vw;
-  background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
 }
 nav ul li{
 	padding: 1rem 0;
@@ -114,9 +120,9 @@ nav ul li{
 nav ul li:hover{
   background-color: #bbcee2;
 }
-nav ul li a{/*inderir depois uma linha no after no a que cresce quando hover nele*/
+nav ul li a{
 	text-decoration: none;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	color: #153964;
   padding: 0 5rem;
   transition: .3s all ease-in;
@@ -124,15 +130,14 @@ nav ul li a{/*inderir depois uma linha no after no a que cresce quando hover nel
 nav ul li a:hover{
   color: #fff;
 }
-nav ul > li:nth-child(3){
-  margin-bottom: 4rem;
+a{
+    color: inherit;
+    font-size: 2.3rem;
+    padding: 0 1rem;
+    transition: .3s all ease;
 }
-.social{
-  display: contents;
-}
-.social > a{
-  padding: 1rem;
-  font-size: 1.8rem;
+a:hover{
+  color: #fff;
 }
 section.banner{
   margin: 0 auto 3rem auto;
