@@ -13,6 +13,19 @@ window.onload = function initiPage() {//aguardando página ser carregada
       }
     });
 
-  //função pra fazer a barra de navegação sumir ao rolar pra baixo
+  //descobrindo se está rolando para baixo ou para cima -https://eduardopereira.pt/2010/05/detectar-direccao-de-scroll-com-javascript-jquery/
+  let subiu = 0;
+  let desceu = 0;
 
+  subiu = window.scrollY;
+  window.onscroll = function () {
+    desceu = window.scrollY;
+      if (subiu > desceu) {
+        document.getElementById('navbar').classList.remove('sumiu');
+        subiu = window.scrollY;
+      }else {
+        document.getElementById('navbar').classList.add('sumiu');
+        subiu = window.scrollY;
+      }
+  }
 }
