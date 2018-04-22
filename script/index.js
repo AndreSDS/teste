@@ -1,7 +1,6 @@
 window.onload = function() {//aguardando página ser carregada
-
   //colocando elementos em variaveis
-    const botao = document.getElementById('dropdown-icon');
+    const botao = document.querySelector('#dropdown-icon');
     const span = document.querySelector('#dropdown-icon span');
     const menu = document.getElementById('menu');
     const navbar = document.getElementById('navbar');
@@ -10,15 +9,11 @@ window.onload = function() {//aguardando página ser carregada
     const header_height = document.getElementById('navbar').offsetHeight;
 
     let links = document.links;
-    console.log(links);
     let html = document.documentElement;
-    console.log(html);
     let body = document.body;
-    console.log(body);
 
     for (var i = 0; i < links.length; i++) {
-      links[i].onclick = function () {
-
+      links[i].onclick = function (e) {
         //fecha o dropdown ao cliclar em um item do menu
         if (menu.className == 'dropdown') {
           menu.classList.remove('dropdown');
@@ -27,7 +22,7 @@ window.onload = function() {//aguardando página ser carregada
 
         let scrollTop = Math.round(body.scrollTop || html.scrollTop);
         if (this.hash != '') {
-          event.preventDefault();
+          e.preventDefault();
           let hashEl = document.getElementById(this.hash.substring(1));
           let hashTop = 0;
           let obj =hashEl;
