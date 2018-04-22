@@ -63,10 +63,11 @@ body{
   font-size: 1.5rem;
 }
 .container{
-  margin: 0 auto;
-  padding: 70px 1rem 0 1rem;
-  height: auto;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 3rem;
+  padding: 70px 1rem 3rem 1rem;
   background-image: url(../img/bg.jpg);
   background-attachment: fixed;
 }
@@ -127,8 +128,6 @@ nav > a{
   padding: 0 1rem;
 }
 section{
-  height: 100vh;
-  margin: 0 auto 2rem auto;
   text-align: center;
   border-radius: .2rem;
   box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
@@ -148,13 +147,12 @@ section{
   font-size: 1.75em;
 }
 .sobre{
-  height: 100vh;
   color: #735959;
   text-shadow: 1px 1px 1px #000;
   background-image: url(../img/bgFotoSmall.jpg);
   background-size: cover;
   background-position: center;
-  padding: 4.5rem 0 0 0;
+  padding: 4.5rem 0 1rem 0;
 }
 .foto{
   height: 160px;
@@ -182,9 +180,7 @@ section{
   font-size: 1.45rem;
   color: #d8ddec;
   margin-bottom: 0;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  padding-top: 4rem;
+  padding: 4rem 1rem 1rem 1rem;
   background: #464545;
 }
 .skills h1{
