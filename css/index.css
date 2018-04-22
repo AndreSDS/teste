@@ -128,7 +128,6 @@ nav > a{
 }
 section{
   height: 100vh;
-  padding: 4.5rem 0 0 0;
   margin: 0 auto 2rem auto;
   text-align: center;
   border-radius: .2rem;
@@ -149,12 +148,13 @@ section{
   font-size: 1.75em;
 }
 .sobre{
-  height: 105vh;
+  height: 100vh;
   color: #735959;
   text-shadow: 1px 1px 1px #000;
   background-image: url(../img/bgFotoSmall.jpg);
   background-size: cover;
   background-position: center;
+  padding: 4.5rem 0 0 0;
 }
 .foto{
   height: 160px;
@@ -169,13 +169,14 @@ section{
 .resumo{
   padding: 1rem 1rem 0 1rem;
   text-align: center;
-  line-height: 1em;
 }
 .resumo h2{
   font-size: 1.5em;
   font-family: 'Ubuntu',sans-serif;
   line-height: 1.15em;
-  padding-bottom: 1rem;
+}
+.resumo p{
+  font-size: 1.17rem;
 }
 .skills{
   font-size: 1.45rem;
@@ -183,6 +184,7 @@ section{
   margin-bottom: 0;
   padding-right: 1rem;
   padding-left: 1rem;
+  padding-top: 4rem;
   background: #464545;
 }
 .skills h1{
@@ -320,6 +322,7 @@ footer li a:hover{
   }
   .resumo p{
     line-height: 1.15em;
+    font-size: 1.17em;
   }
   .skills h1 {
       font-size: 1.7em;
