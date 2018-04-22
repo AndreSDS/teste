@@ -131,6 +131,7 @@ section{
   text-align: center;
   border-radius: .2rem;
   box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
+  padding: 4.5rem 0 2rem 0;
 }
 .banner{
   color: #ffffff;
@@ -138,6 +139,7 @@ section{
   background-position: center;
   background-size: cover;
   text-shadow: 1px 1px 1px #000;
+  padding: 0 1rem 2rem 1rem;
 }
 .banner h1{
   padding-top: .5em;
@@ -147,12 +149,11 @@ section{
   font-size: 1.75em;
 }
 .sobre{
-  color: #735959;
+  color: #c7c6c6;
   text-shadow: 1px 1px 1px #000;
   background-image: url(../img/bgFotoSmall.jpg);
   background-size: cover;
   background-position: center;
-  padding: 4.5rem 0 1rem 0;
 }
 .foto{
   height: 160px;
@@ -180,14 +181,15 @@ section{
   font-size: 1.45rem;
   color: #d8ddec;
   margin-bottom: 0;
-  padding: 4rem 1rem 1rem 1rem;
   background: #464545;
 }
 .skills h1{
-  font-size: 1.3em;
+  font-size: 1.4em;
+  text-shadow: 1px 1px 1px #000;
 }
 .skills div{
   height: 128px;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
   margin: 2rem auto 0 auto;
   border-radius: .2rem;
   background-repeat: no-repeat;
@@ -241,10 +243,9 @@ footer li a:hover{
     right: 2rem;
   }
   .container {
-    padding: 0 2rem;
+        padding: 70px 2rem 3rem 2rem;
   }
   .banner {
-    margin-top: 70px;
     background-image: url(../img/bannerTablet.jpg);
 }
 .sobre{
@@ -300,10 +301,9 @@ footer li a:hover{
     display: none;
   }
   .container {
-    padding: 0 4rem;
+    padding: 70px 4rem 3rem 4rem;
   }
   .banner {
-    margin-top: 70px;
     background-image: url(../img/bannerPc.jpg);
 }
   .banner h1{
@@ -366,10 +366,9 @@ footer li a:hover{
     display: none;
   }
   .container {
-    padding: 0 6rem;
+    padding: 70px 6rem 3rem 6rem;
   }
   .banner {
-    margin-top: 70px;
     background-image: url(../img/bannerFull.jpg);
 }
 .banner h1{
@@ -432,16 +431,12 @@ footer li a:hover{
     display: none;
   }
   .container {
-    padding: 0 6rem;
-  }
-  .container {
-    padding: 0 8rem;
+    padding: 70px 8rem 3rem 8rem;
   }
   .banner {
-    margin-top: 70px;
     background-image: url(../img/bannerFull.jpg);
 }
-.banner h1{
+  .banner h1{
   font-size: 3.5em;
 }
 .sobre{
