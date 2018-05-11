@@ -7,7 +7,7 @@ let navHeight = nav.offsetHeight;
 window.addEventListener('scroll', function () {
   const windowTop = window.pageYOffset;
   if (windowTop >= distanciaTop) {
-    nav.classList.add('fixed');
+    //nav.classList.add('fixed');
   }else{
     nav.classList.remove('fixed');
   }
